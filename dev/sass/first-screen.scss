@@ -1,0 +1,61 @@
+.build {
+    height: calc(100vh - 227px);
+}
+
+.build-item {
+    fill: #2196f3b8;
+    stroke: #0066ff;
+    fill-opacity: 0;
+    stroke-opacity: 0;
+    stroke-width: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    
+    &.sold {
+        fill: #f14467b8;
+        stroke: #ff447c;
+        &:hover {
+            cursor: no-drop;
+        }
+    }
+    
+    &:hover {
+        stroke-opacity: 1;
+        fill-opacity: 0.7;
+    }
+}
+
+.genplan {
+    display: flex;
+    flex-direction: column;
+}
+
+.information {
+    color: #fff;
+    background: #121212;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    h2 {
+        font-size: 24px;
+    }
+    &-list {
+        list-style: none;
+        display: flex;
+        gap: 18px;
+        text-align: center;
+    }
+   
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    b {
+        font-size: 18px;
+    }
+}
+
+
+ 
