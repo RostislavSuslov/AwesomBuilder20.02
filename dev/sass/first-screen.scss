@@ -10,15 +10,21 @@
     stroke-width: 5px;
     transition: 0.2s;
     cursor: pointer;
-    
+
     &.sold {
         fill: #f14467b8;
         stroke: #ff447c;
+        stroke-opacity: 1;
+        fill-opacity: 0.7;
+
+        cursor: no-drop;
+
         &:hover {
-            cursor: no-drop;
+            fill-opacity: 1;
+
         }
     }
-    
+
     &:hover {
         stroke-opacity: 1;
         fill-opacity: 0.7;
@@ -37,25 +43,32 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
     h2 {
         font-size: 24px;
     }
+
     &-list {
         list-style: none;
         display: flex;
         gap: 18px;
         text-align: center;
     }
-   
+
 }
 
 .list-item {
     display: flex;
+    min-width: 235px;
     flex-direction: column;
+
     b {
         font-size: 18px;
     }
 }
 
-
- 
+.green {
+    stroke-opacity: 1;
+    fill-opacity: 0.7;
+    fill: #44f15bb8 !important;
+}
