@@ -4,6 +4,29 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #fff;
+    --color: #000;
+    --example-bg: aliceblue;
+
+    --primary: #df60ff;
+    --secondary: #07f7ff;
+    --succsess: #76ff03;
+    --warning: #ff5722;
+    --error: #ff1744;
+}
+
+.dark-theme {
+    --primary: #efadff;
+    --secondary: #befdff;
+    --succsess: #ddffc2;
+    --warning: #ffdbd0;
+    --error: #ffadbd;
+    --bg-color: #272727;
+    --color: #ffffff;
+    --example-bg: rgb(75, 78, 81);
+}
+
 body {
     font-size: 16px;
     background: #2f3624;
@@ -14,8 +37,193 @@ img {
     height: auto;
 }
 
-.container  {
+.container {
     max-width: 1350px;
     padding: 0 12px;
     margin: 0 auto;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 16px 40px;
+    border-radius: 0;
+    border: 2px solid #000;
+    background-color: #ececec;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-succsess {
+    background-color: var(--succsess);
+    border-color: var(--succsess);
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    border-color: var(--warning);
+}
+
+.btn-error {
+    background-color: var(--error);
+    border-color: var(--error);
+}
+
+.btn-rounded {
+    border-radius: 25px;
+}
+
+.btn-outline {
+    background-color: transparent;
+}
+
+.btn-outline.btn-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline.btn-secondary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-outline.btn-succsess:hover {
+    background-color: var(--succsess);
+    border-color: var(--succsess);
+}
+
+.btn-outline.btn-warning:hover {
+    background-color: var(--warning);
+    border-color: var(--warning);
+}
+
+.btn-outline.btn-error:hover {
+    background-color: var(--error);
+    border-color: var(--error);
+}
+
+
+
+.btn:active,
+.btn.btn-rounded:active,
+.btn.btn-outline:active {
+    background-color: var(--error);
+}
+
+
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-succsess {
+    background-color: var(--succsess);
+}
+
+.bg-warning {
+    background-color: var(--warning);
+}
+
+.bg-error {
+    background-color: var(--error);
+}
+
+.btn-close {
+    padding: 12px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    &:hover {
+        transform: rotate(0.5turn);
+    }
+
+    &:active {
+        background-color: transparent;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 17px;
+        height: 2px;
+        background-color: #272727;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 4px;
+        top: 11px;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+caption {
+    font-weight: 600;
+    margin-bottom: .7em;
+}
+
+
+h1,
+.title-1,
+.page-title {
+    font-size: 2.25rem;
+}
+
+h2,
+.title-2,
+.example-title,
+.page-subtitle {
+    font-size: 2rem;
+}
+
+h3,
+.title-3,
+caption {
+    font-size: 1.75rem;
+}
+
+h4,
+.title-4 {
+    font-size: 1.62rem;
+}
+
+h5,
+.title-5 {
+    font-size: 1.37rem;
+}
+
+h6,
+.title-6 {
+    font-size: 1.12rem;
 }

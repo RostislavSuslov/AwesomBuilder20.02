@@ -1,0 +1,38 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: .3s;
+    &.show {
+        visibility: visible;
+        background: #0009;
+        .modal-body {
+            transform: translateY(0);
+        }
+    }
+}
+
+.modal-body {
+    background: aliceblue;
+    max-width: 550px;
+    width: 100%;
+    min-height: 220px;
+    padding: 28px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: .3s;
+    transform: translateY(100vh);
+}
+
+.btn-row {
+    margin-top: auto;
+}
