@@ -10,9 +10,11 @@
     justify-content: center;
     visibility: hidden;
     transition: .3s;
+
     &.show {
         visibility: visible;
         background: #0009;
+
         .modal-body {
             transform: translateY(0);
         }
@@ -35,4 +37,24 @@
 
 .btn-row {
     margin-top: auto;
+}
+
+
+
+
+/*test*/
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    input {
+        height: 48px;
+    }
+
+    &-column {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
 }
