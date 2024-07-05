@@ -1,0 +1,65 @@
+.flat {
+    &.active {
+        .flat-stroke {
+            stroke: $flat-active-stroke;
+            fill: $flat-active-fill;
+        }
+    }
+    
+    &.action {
+        .number-overlay {
+            fill: $flat-action;
+        }
+    }
+    
+    &.booking {
+        .number-overlay {
+            fill: $flat-booking;
+        }
+    }
+    
+    &.sold {
+        .number-overlay {
+            fill: $flat-sold;
+        }
+    }
+}
+
+.flat-stroke {
+    stroke: #04ff0000;
+    stroke-width: 3px;
+    fill: #04ff0000;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+        stroke: $flat-stroke;
+        fill: $flat-fill;
+    }
+}
+
+.status-overlay {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2px;
+}
+
+
+.number-overlay {
+    fill: $flat-free;
+    stroke: #000000;
+    stroke-width: 2px;
+}
+
+.cell-flat-number,
+.cell-flat-status {
+    fill: #000000;
+    font-weight: bold;
+}
+
+.floor-options {
+    display: flex;
+    gap: 24px;
+    text-align: center;
+    font-size: 20px;
+}
