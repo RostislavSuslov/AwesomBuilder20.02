@@ -151,6 +151,9 @@ const installFloor = () => {
                     <div>Статус квартири:</div>
                     <div><h2>${item.status}</h2></div>
                 </div>
+                   <div class="floor-option-item">
+                    <a href="#" class="btn btn-warning">Оглянути квартиру</a>
+                </div>
             `)
         })
 
